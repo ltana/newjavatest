@@ -4,7 +4,7 @@
 	<test name="Test1">
 		<parameter name="path" value="/"/>
 		<classes>
-		    <class name="newgroup.LoginTest"/>
+		    <class name="newgroup.ChangePassTest"/>
 		</classes>
 	</test>  
 </suite>

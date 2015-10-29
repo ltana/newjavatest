@@ -5,13 +5,14 @@
   <test name="Test1(failed)">
     <parameter name="path" value="/"/>
     <classes>
-      <class name="newgroup.LoginTest">
+      <class name="newgroup.ChangePassTest">
         <methods>
-          <include name="testUntitled"/>
           <include name="tearDown"/>
+          <include name="testChangePass"/>
           <include name="init"/>
+          <include name="afterChangePass"/>
         </methods>
-      </class> <!-- newgroup.LoginTest -->
+      </class> <!-- newgroup.ChangePassTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Tests] -->
