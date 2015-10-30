@@ -9,7 +9,9 @@ import org.testng.annotations.*;
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ChangePassTest extends TestBase {
   private boolean acceptNextAlert = true;
@@ -18,6 +20,7 @@ public class ChangePassTest extends TestBase {
   @Test
 public void testChangePass() throws Exception {
 	  driver.manage().window().maximize();
+	  WebDriverWait wait = new WebDriverWait(driver, 5);
     driver.get(baseUrl + "/php4dvd/");
     WebElement userNameField = driver.findElement(By.id("username"));
 	userNameField.clear();
@@ -37,6 +40,7 @@ public void testChangePass() throws Exception {
     driver.findElement(By.name("submit")).click();
     Thread.sleep(2000);
     driver.findElement(By.linkText("Log out")).click();
+    wait.until(ExpectedConditions.alertIsPresent());
     driver.switchTo().alert().accept();
     driver.switchTo().defaultContent();
 

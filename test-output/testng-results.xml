@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25461" started-at="2015-10-30T13:34:25Z" finished-at="2015-10-30T13:34:51Z">
+  <suite name="Default suite" duration-ms="15925" started-at="2015-10-30T13:42:57Z" finished-at="2015-10-30T13:43:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25461" started-at="2015-10-30T13:34:25Z" finished-at="2015-10-30T13:34:51Z">
+    <test name="Default test" duration-ms="15925" started-at="2015-10-30T13:42:57Z" finished-at="2015-10-30T13:43:13Z">
       <class name="newgroup.ChangePassTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.ChangePassTest@8d66b2]" name="init" is-config="true" duration-ms="12545" started-at="2015-10-30T15:34:25Z" finished-at="2015-10-30T15:34:38Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.ChangePassTest@10375b3]" name="init" is-config="true" duration-ms="8474" started-at="2015-10-30T15:42:57Z" finished-at="2015-10-30T15:43:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testChangePass()[pri:0, instance:newgroup.ChangePassTest@8d66b2]" name="testChangePass" duration-ms="11770" started-at="2015-10-30T15:34:38Z" finished-at="2015-10-30T15:34:49Z">
+        <test-method status="PASS" signature="testChangePass()[pri:0, instance:newgroup.ChangePassTest@10375b3]" name="testChangePass" duration-ms="6277" started-at="2015-10-30T15:43:05Z" finished-at="2015-10-30T15:43:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testChangePass -->
-        <test-method status="PASS" signature="afterChangePass()[pri:0, instance:newgroup.ChangePassTest@8d66b2]" name="afterChangePass" is-config="true" duration-ms="1108" started-at="2015-10-30T15:34:49Z" finished-at="2015-10-30T15:34:51Z">
+        <test-method status="PASS" signature="afterChangePass()[pri:0, instance:newgroup.ChangePassTest@10375b3]" name="afterChangePass" is-config="true" duration-ms="1161" started-at="2015-10-30T15:43:12Z" finished-at="2015-10-30T15:43:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterChangePass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:newgroup.ChangePassTest@8d66b2]" name="tearDown" is-config="true" duration-ms="873" started-at="2015-10-30T15:34:51Z" finished-at="2015-10-30T15:34:52Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:newgroup.ChangePassTest@10375b3]" name="tearDown" is-config="true" duration-ms="841" started-at="2015-10-30T15:43:13Z" finished-at="2015-10-30T15:43:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
