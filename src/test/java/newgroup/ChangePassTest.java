@@ -17,6 +17,7 @@ public class ChangePassTest extends TestBase {
 
   @Test
 public void testChangePass() throws Exception {
+	  driver.manage().window().maximize();
     driver.get(baseUrl + "/php4dvd/");
     WebElement userNameField = driver.findElement(By.id("username"));
 	userNameField.clear();
