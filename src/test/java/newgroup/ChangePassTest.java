@@ -35,6 +35,7 @@ public void testChangePass() throws Exception {
 	newpassagain.clear();
     newpassagain.sendKeys("1");
     driver.findElement(By.name("submit")).click();
+    Thread.sleep(2000);
     driver.findElement(By.linkText("Log out")).click();
     driver.switchTo().alert().accept();
     driver.switchTo().defaultContent();
@@ -46,13 +47,10 @@ public void testChangePass() throws Exception {
     driver.findElement(By.name("submit")).click();
    
     Assert.assertTrue(driver.findElement(By.cssSelector(".error")).isDisplayed());
-    		//getText(), "Incorrect user name or password");
-    //assertTrue(driver.findElement(By.css('.error')).getText().match("Incorrect user name or password"));
   }
 
   @AfterClass
   public void afterChangePass() throws Exception {
-	    //driver.get(baseUrl + "/php4dvd/");
 	    WebElement userNameField = driver.findElement(By.id("username"));
 		userNameField.clear();
 	    userNameField.sendKeys("admin");
