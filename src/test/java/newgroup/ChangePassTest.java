@@ -43,7 +43,7 @@ public void testChangePass() throws Exception {
     wait.until(ExpectedConditions.alertIsPresent());
     driver.switchTo().alert().accept();
     driver.switchTo().defaultContent();
-
+    Thread.sleep(2000);
     driver.findElement(By.id("username")).clear();
     driver.findElement(By.id("username")).sendKeys("admin");
     driver.findElement(By.name("password")).clear();
