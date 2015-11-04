@@ -55,6 +55,7 @@ public class DeleteFilm extends TestBase {
     System.out.println("new films i have = " + afterdeletefilms);
  
     Assert.assertEquals(afterdeletefilms, films-1);
+    driver.quit();
  }
 
   

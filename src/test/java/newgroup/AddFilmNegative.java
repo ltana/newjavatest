@@ -42,6 +42,7 @@ public class AddFilmNegative extends TestBase {
   
     Assert.assertEquals(driver.switchTo().activeElement(), driver.findElement(By.name("year")));
     Assert.assertTrue(driver.findElement(By.xpath(".//label[@for='year']")).isDisplayed());
+    driver.quit();
  }
 
   
