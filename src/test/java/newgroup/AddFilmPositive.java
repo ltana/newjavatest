@@ -54,7 +54,11 @@ public class AddFilmPositive extends TestBase {
     System.out.println("new films i have = " + newfilms);
     
     Assert.assertEquals(newfilms, films+1);
-    driver.quit();
+
+    driver.findElement(By.linkText("Log out")).click();
+    wait.until(ExpectedConditions.alertIsPresent());
+    driver.switchTo().alert().accept();
+    driver.switchTo().defaultContent();
     
     
   }
