@@ -4,7 +4,9 @@
 	<test name="Test1">
 		<parameter name="path" value="/"/>
 		<classes>
-		    <class name="newgroup.ChangePassTest"/>
+		 <class name="newgroup.AddFilmPositive"/>
+		 <class name="newgroup.AddFilmNegative"/> 
+		 <class name="newgroup.DeleteFilm"/> 
 		</classes>
 	</test>  
 </suite>
