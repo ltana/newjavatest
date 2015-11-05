@@ -38,16 +38,19 @@ public class SearchSomeResults extends TestBase {
 	searchWord.clear();
 	searchWord.sendKeys(Keys.RETURN);
 	
-	wait.until(ExpectedConditions.presenceOfElementLocated(By.className("movie_box")));
+	wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.xpath(".//*[@id='results']/div[1]"))));
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
+	
+	WebElement firstFilm = driver.findElement(By.className("movie_box"));
    
     String filmTitle = driver.findElement(By.className("movie_box"))
     		.findElement(By.className("title")).getText();
     System.out.println("first film title is " + filmTitle);
 
-  	
     searchWord.sendKeys(filmTitle + Keys.RETURN);
     	
-    wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.className("movie_box"))));
+    wait.until(ExpectedConditions.stalenessOf(firstFilm));
+    wait.until(ExpectedConditions.presenceOfElementLocated(By.className("movie_box")));
   
     Assert.assertTrue(driver.findElement(By.className("movie_box"))
     		.findElement(By.className("title")).getText().equals(filmTitle));

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="newgroup.SearchNoResults">
+      <class name="newgroup.SearchSomeResults">
         <methods>
-          <include name="testSearchNoResults"/>
-          <include name="tearDown"/>
           <include name="afterSearchNoResults"/>
+          <include name="tearDown"/>
           <include name="init"/>
+          <include name="testSearchSomeResults"/>
         </methods>
-      </class> <!-- newgroup.SearchNoResults -->
+      </class> <!-- newgroup.SearchSomeResults -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

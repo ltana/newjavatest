@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,21 @@
                       <a href="#" panel-name="suite-Tests" class="show-methods passed suite-Tests"> (show)</a> <!-- show-methods passed suite-Tests -->
                     </span>
                     <div class="method-list-content passed suite-Tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="newgroup.AddFilmNegative" hash-for-method="testAddFilmNegative">testAddFilmNegative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="newgroup.AddFilmPositive" hash-for-method="testAddFilmPositive">testAddFilmPositive</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Tests" title="newgroup.DeleteFilm" hash-for-method="testDeleteFilm">testDeleteFilm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Tests" title="newgroup.SearchNoResults" hash-for-method="testSearchNoResults">testSearchNoResults</a> <!-- method navigator-link -->
@@ -124,14 +139,44 @@
           <div class="suite-Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">newgroup.SearchNoResults</span>
+              <span class="class-name">newgroup.AddFilmPositive</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSearchNoResults">
-                  </a> <!-- testSearchNoResults -->
-                  <span class="method-name">testSearchNoResults</span>
+                  <a name="testAddFilmPositive">
+                  </a> <!-- testAddFilmPositive -->
+                  <span class="method-name">testAddFilmPositive</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">newgroup.DeleteFilm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteFilm">
+                  </a> <!-- testDeleteFilm -->
+                  <span class="method-name">testDeleteFilm</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">newgroup.AddFilmNegative</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddFilmNegative">
+                  </a> <!-- testAddFilmNegative -->
+                  <span class="method-name">testAddFilmNegative</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -151,6 +196,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Tests-class-passed -->
+          <div class="suite-Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">newgroup.SearchNoResults</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchNoResults">
+                  </a> <!-- testSearchNoResults -->
+                  <span class="method-name">testSearchNoResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tests-class-passed -->
         </div> <!-- panel Tests -->
         <div panel-name="test-xml-Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -164,6 +224,9 @@
   &lt;test name=&quot;Test1&quot;&gt;
     &lt;parameter name=&quot;path&quot; value=&quot;/&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;newgroup.AddFilmPositive&quot;/&gt;
+      &lt;class name=&quot;newgroup.AddFilmNegative&quot;/&gt;
+      &lt;class name=&quot;newgroup.DeleteFilm&quot;/&gt;
       &lt;class name=&quot;newgroup.SearchNoResults&quot;/&gt;
       &lt;class name=&quot;newgroup.SearchSomeResults&quot;/&gt;
     &lt;/classes&gt;
@@ -179,7 +242,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test1 (2 classes)</span>
+                <span class="test-name">Test1 (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,20 +268,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSearchNoResults')
-data.setCell(0, 2, 'newgroup.SearchNoResults')
-data.setCell(0, 3, 3558);
+data.setCell(0, 1, 'testAddFilmPositive')
+data.setCell(0, 2, 'newgroup.AddFilmPositive')
+data.setCell(0, 3, 4508);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testSearchSomeResults')
 data.setCell(1, 2, 'newgroup.SearchSomeResults')
-data.setCell(1, 3, 1421);
+data.setCell(1, 3, 1953);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testDeleteFilm')
+data.setCell(2, 2, 'newgroup.DeleteFilm')
+data.setCell(2, 3, 1739);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testSearchNoResults')
+data.setCell(3, 2, 'newgroup.SearchNoResults')
+data.setCell(3, 3, 1307);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testAddFilmNegative')
+data.setCell(4, 2, 'newgroup.AddFilmNegative')
+data.setCell(4, 3, 971);
 window.suiteTableData['Tests']= { tableData: data, tableDiv: 'times-div-Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Tests">
               </div> <!-- times-div-Tests -->
             </div> <!-- times-div -->
@@ -233,11 +308,32 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">1 ignored method</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">newgroup.DeleteFilm</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">newgroup.AddFilmNegative</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">newgroup.SearchSomeResults</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">newgroup.SearchNoResults</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">tearDown</span>
                 <br/>
@@ -251,40 +347,85 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">newgroup.SearchNoResults</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">newgroup.AddFilmPositive</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">testAddFilmPositive</span>
+                <span class="method-start">5783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterAddFilmPositive</span>
+                <span class="method-start">10292 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">newgroup.AddFilmNegative</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">10896 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testAddFilmNegative</span>
+                <span class="method-start">11052 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterAddFilmNegative</span>
+                <span class="method-start">12024 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">newgroup.DeleteFilm</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">12619 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteFilm</span>
+                <span class="method-start">12790 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterDeleteFilm</span>
+                <span class="method-start">14529 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">newgroup.SearchNoResults</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">15218 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
                 <span class="method-name">testSearchNoResults</span>
-                <span class="method-start">4887 ms</span>
+                <span class="method-start">15356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSearchNoResults</span>
-                <span class="method-start">8445 ms</span>
+                <span class="method-start">16663 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">newgroup.SearchSomeResults</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">9031 ms</span>
+                <span class="method-start">17252 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testSearchSomeResults</span>
-                <span class="method-start">9196 ms</span>
+                <span class="method-start">17401 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterSearchNoResults</span>
-                <span class="method-start">10620 ms</span>
+                <span class="method-start">19355 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">newgroup.SearchNoResults</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">newgroup.AddFilmPositive</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">11224 ms</span>
+                <span class="method-start">19975 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
