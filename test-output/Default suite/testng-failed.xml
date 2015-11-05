@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="newgroup.AddFilmNegative">
+      <class name="newgroup.SearchNoResults">
         <methods>
+          <include name="testSearchNoResults"/>
           <include name="tearDown"/>
-          <include name="testAddFilmNegative"/>
+          <include name="afterSearchNoResults"/>
           <include name="init"/>
         </methods>
-      </class> <!-- newgroup.AddFilmNegative -->
+      </class> <!-- newgroup.SearchNoResults -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,14 +5,20 @@
   <test name="Test1(failed)">
     <parameter name="path" value="/"/>
     <classes>
-      <class name="newgroup.ChangePassTest">
+      <class name="newgroup.SearchNoResults">
         <methods>
+          <include name="testSearchNoResults"/>
           <include name="tearDown"/>
-          <include name="testChangePass"/>
+          <include name="afterSearchNoResults"/>
           <include name="init"/>
-          <include name="afterChangePass"/>
         </methods>
-      </class> <!-- newgroup.ChangePassTest -->
+      </class> <!-- newgroup.SearchNoResults -->
+      <class name="newgroup.SearchSomeResults">
+        <methods>
+          <include name="afterSearchNoResults"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- newgroup.SearchSomeResults -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Tests] -->

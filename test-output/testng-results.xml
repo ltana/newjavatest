@@ -2,24 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27602" started-at="2015-11-04T12:20:57Z" finished-at="2015-11-04T12:21:25Z">
+  <suite name="Default suite" duration-ms="9422" started-at="2015-11-05T15:17:59Z" finished-at="2015-11-05T15:18:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27602" started-at="2015-11-04T12:20:57Z" finished-at="2015-11-04T12:21:25Z">
-      <class name="newgroup.DeleteFilm">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.DeleteFilm@9a8472]" name="init" is-config="true" duration-ms="5564" started-at="2015-11-04T14:20:57Z" finished-at="2015-11-04T14:21:03Z">
+    <test name="Default test" duration-ms="9422" started-at="2015-11-05T15:17:59Z" finished-at="2015-11-05T15:18:09Z">
+      <class name="newgroup.SearchNoResults">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.SearchNoResults@17c7260]" name="init" is-config="true" duration-ms="4824" started-at="2015-11-05T17:17:59Z" finished-at="2015-11-05T17:18:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testDeleteFilm()[pri:0, instance:newgroup.DeleteFilm@9a8472]" name="testDeleteFilm" duration-ms="22021" started-at="2015-11-04T14:21:03Z" finished-at="2015-11-04T14:21:25Z">
+        <test-method status="PASS" signature="testSearchNoResults()[pri:0, instance:newgroup.SearchNoResults@17c7260]" name="testSearchNoResults" duration-ms="3998" started-at="2015-11-05T17:18:04Z" finished-at="2015-11-05T17:18:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDeleteFilm -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:newgroup.DeleteFilm@9a8472]" name="tearDown" is-config="true" duration-ms="1520" started-at="2015-11-04T14:21:25Z" finished-at="2015-11-04T14:21:26Z">
+        </test-method> <!-- testSearchNoResults -->
+        <test-method status="PASS" signature="afterSearchNoResults()[pri:0, instance:newgroup.SearchNoResults@17c7260]" name="afterSearchNoResults" is-config="true" duration-ms="586" started-at="2015-11-05T17:18:08Z" finished-at="2015-11-05T17:18:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSearchNoResults -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:newgroup.SearchNoResults@17c7260]" name="tearDown" is-config="true" duration-ms="1451" started-at="2015-11-05T17:18:09Z" finished-at="2015-11-05T17:18:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- newgroup.DeleteFilm -->
+      </class> <!-- newgroup.SearchNoResults -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

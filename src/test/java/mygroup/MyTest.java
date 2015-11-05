@@ -1,4 +1,4 @@
-package newgroup;
+package mygroup;
 
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -6,19 +6,23 @@ import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.*;
 import org.testng.annotations.*;
+
+import newgroup.TestBase;
+
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class ChangePassTest extends TestBase {
+public class MyTest extends TestBase {
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
 
   @Test
-public void testChangePass() throws Exception {
+public void testMyTest() throws Exception {
 	  driver.manage().window().maximize();
 	  WebDriverWait wait = new WebDriverWait(driver, 5);
     driver.get(baseUrl + "/php4dvd/");
@@ -41,8 +45,12 @@ public void testChangePass() throws Exception {
     Thread.sleep(2000);
     driver.findElement(By.linkText("Log out")).click();
     wait.until(ExpectedConditions.alertIsPresent());
-    driver.switchTo().alert().accept();
+    Alert alert = driver.switchTo().alert();
+	alert.accept();
     driver.switchTo().defaultContent();
+    driver.quit();
+    
+    WebDriver driver = new ChromeDriver();
     Thread.sleep(2000);
     driver.findElement(By.id("username")).clear();
     driver.findElement(By.id("username")).sendKeys("admin");
@@ -53,7 +61,7 @@ public void testChangePass() throws Exception {
     Assert.assertTrue(driver.findElement(By.cssSelector(".error")).isDisplayed());
   }
 
-  @AfterClass
+  /*@AfterClass
   public void afterChangePass() throws Exception {
 	    WebElement userNameField = driver.findElement(By.id("username"));
 		userNameField.clear();
@@ -71,7 +79,7 @@ public void testChangePass() throws Exception {
 		newpassagain.clear();
 	    newpassagain.sendKeys("admin");
 	    driver.findElement(By.name("submit")).click();
-  }
+  }*/
   
   
 private boolean isElementPresent(By by) {

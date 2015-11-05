@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="13528" started-at="2015-10-30T11:21:09Z" finished-at="2015-10-30T11:21:22Z">
+  <suite name="Tests" duration-ms="11206" started-at="2015-11-05T15:20:31Z" finished-at="2015-11-05T15:20:42Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="13528" started-at="2015-10-30T11:21:09Z" finished-at="2015-10-30T11:21:22Z">
-      <class name="newgroup.ChangePassTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.ChangePassTest@f438e]" name="init" is-config="true" duration-ms="8450" started-at="2015-10-30T13:21:09Z" finished-at="2015-10-30T13:21:17Z">
+    <test name="Test1" duration-ms="11206" started-at="2015-11-05T15:20:31Z" finished-at="2015-11-05T15:20:42Z">
+      <class name="newgroup.SearchSomeResults">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.SearchSomeResults@17a2457]" name="init" is-config="true" duration-ms="165" started-at="2015-11-05T17:20:40Z" finished-at="2015-11-05T17:20:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testChangePass()[pri:0, instance:newgroup.ChangePassTest@f438e]" name="testChangePass" duration-ms="3902" started-at="2015-10-30T13:21:17Z" finished-at="2015-10-30T13:21:21Z">
+        <test-method status="PASS" signature="testSearchSomeResults()[pri:0, instance:newgroup.SearchSomeResults@17a2457]" name="testSearchSomeResults" duration-ms="1421" started-at="2015-11-05T17:20:40Z" finished-at="2015-11-05T17:20:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testChangePass -->
-        <test-method status="PASS" signature="afterChangePass()[pri:0, instance:newgroup.ChangePassTest@f438e]" name="afterChangePass" is-config="true" duration-ms="1164" started-at="2015-10-30T13:21:21Z" finished-at="2015-10-30T13:21:22Z">
+        </test-method> <!-- testSearchSomeResults -->
+        <test-method status="PASS" signature="afterSearchNoResults()[pri:0, instance:newgroup.SearchSomeResults@17a2457]" name="afterSearchNoResults" is-config="true" duration-ms="576" started-at="2015-11-05T17:20:42Z" finished-at="2015-11-05T17:20:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterChangePass -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:newgroup.ChangePassTest@f438e]" name="tearDown" is-config="true" duration-ms="552" started-at="2015-10-30T13:21:22Z" finished-at="2015-10-30T13:21:23Z">
+        </test-method> <!-- afterSearchNoResults -->
+      </class> <!-- newgroup.SearchSomeResults -->
+      <class name="newgroup.SearchNoResults">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.SearchNoResults@ac6e3]" name="init" is-config="true" duration-ms="4885" started-at="2015-11-05T17:20:31Z" finished-at="2015-11-05T17:20:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testSearchNoResults()[pri:0, instance:newgroup.SearchNoResults@ac6e3]" name="testSearchNoResults" duration-ms="3558" started-at="2015-11-05T17:20:36Z" finished-at="2015-11-05T17:20:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchNoResults -->
+        <test-method status="PASS" signature="afterSearchNoResults()[pri:0, instance:newgroup.SearchNoResults@ac6e3]" name="afterSearchNoResults" is-config="true" duration-ms="586" started-at="2015-11-05T17:20:40Z" finished-at="2015-11-05T17:20:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSearchNoResults -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:newgroup.SearchNoResults@ac6e3]" name="tearDown" is-config="true" duration-ms="1460" started-at="2015-11-05T17:20:42Z" finished-at="2015-11-05T17:20:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- newgroup.ChangePassTest -->
+      </class> <!-- newgroup.SearchNoResults -->
     </test> <!-- Test1 -->
   </suite> <!-- Tests -->
 </testng-results>

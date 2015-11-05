@@ -16,11 +16,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 @Test
-public class AddFilmNegative extends TestBase {
+public class SearchSomeResults extends TestBase {
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
 
-  public void testAddFilmNegative() throws Exception {
+  public void testSearchSomeResults() throws Exception {
 	  driver.manage().window().maximize();
 	  WebDriverWait wait = new WebDriverWait(driver, 5);
     driver.get(baseUrl + "/php4dvd/");
@@ -32,29 +32,27 @@ public class AddFilmNegative extends TestBase {
     passwordField.sendKeys("admin");
     driver.findElement(By.name("submit")).click();
     
-    wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("Add movie")));
+    wait.until(ExpectedConditions.presenceOfElementLocated(By.id("q")));
     
-    driver.findElement(By.linkText("Add movie")).click();
-    WebElement name = driver.findElement(By.name("name"));
-	name.clear();
-    name.sendKeys("new film1");
-    driver.findElement(By.name("submit")).click();
-  
-    Assert.assertEquals(driver.switchTo().activeElement(), driver.findElement(By.name("year")));
-    Assert.assertTrue(driver.findElement(By.xpath(".//label[@for='year']")).isDisplayed());
- }
-  
-  @AfterClass
-  public void afterAddFilmNegative() throws Exception {
-	  WebDriverWait wait = new WebDriverWait(driver, 5);
-	    driver.findElement(By.linkText("Log out")).click();
-	    wait.until(ExpectedConditions.alertIsPresent());
-	    driver.switchTo().alert().accept();
-	    driver.switchTo().defaultContent();
-  }
+    WebElement searchWord = driver.findElement(By.id("q"));
+	searchWord.clear();
+	searchWord.sendKeys(Keys.RETURN);
+	
+	wait.until(ExpectedConditions.presenceOfElementLocated(By.className("movie_box")));
+   
+    String filmTitle = driver.findElement(By.className("movie_box"))
+    		.findElement(By.className("title")).getText();
+    System.out.println("first film title is " + filmTitle);
 
+  	
+    searchWord.sendKeys(filmTitle + Keys.RETURN);
+    	
+    wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.className("movie_box"))));
   
-  
+    Assert.assertTrue(driver.findElement(By.className("movie_box"))
+    		.findElement(By.className("title")).getText().equals(filmTitle));
+ }
+
   
 private boolean isElementPresent(By by) {
     try {
@@ -78,6 +76,15 @@ private boolean isElementPresent(By by) {
     } finally {
       acceptNextAlert = true;
     }
+  }
+  
+  @AfterClass
+  public void afterSearchNoResults() throws Exception {
+	  WebDriverWait wait = new WebDriverWait(driver, 5);
+	    driver.findElement(By.linkText("Log out")).click();
+	    wait.until(ExpectedConditions.alertIsPresent());
+	    driver.switchTo().alert().accept();
+	    driver.switchTo().defaultContent();
   }
 }
 

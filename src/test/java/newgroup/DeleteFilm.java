@@ -55,12 +55,16 @@ public class DeleteFilm extends TestBase {
     System.out.println("new films i have = " + afterdeletefilms);
  
     Assert.assertEquals(afterdeletefilms, films-1);
-    
-    driver.findElement(By.linkText("Log out")).click();
-    wait.until(ExpectedConditions.alertIsPresent());
-    driver.switchTo().alert().accept();
-    driver.switchTo().defaultContent();
  }
+  
+  @AfterClass
+  public void afterDeleteFilm() throws Exception {
+	  WebDriverWait wait = new WebDriverWait(driver, 5);
+	    driver.findElement(By.linkText("Log out")).click();
+	    wait.until(ExpectedConditions.alertIsPresent());
+	    driver.switchTo().alert().accept();
+	    driver.switchTo().defaultContent();
+  }
 
   
   

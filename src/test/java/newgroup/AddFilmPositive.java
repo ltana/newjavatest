@@ -54,13 +54,15 @@ public class AddFilmPositive extends TestBase {
     System.out.println("new films i have = " + newfilms);
     
     Assert.assertEquals(newfilms, films+1);
-
-    driver.findElement(By.linkText("Log out")).click();
-    wait.until(ExpectedConditions.alertIsPresent());
-    driver.switchTo().alert().accept();
-    driver.switchTo().defaultContent();
-    
-    
+}
+  
+  @AfterClass
+  public void afterAddFilmPositive() throws Exception {
+	  WebDriverWait wait = new WebDriverWait(driver, 5);
+	    driver.findElement(By.linkText("Log out")).click();
+	    wait.until(ExpectedConditions.alertIsPresent());
+	    driver.switchTo().alert().accept();
+	    driver.switchTo().defaultContent();
   }
 
   
