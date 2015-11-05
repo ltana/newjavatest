@@ -50,7 +50,7 @@ public class SearchSomeResults extends TestBase {
     searchWord.sendKeys(filmTitle + Keys.RETURN);
     	
     wait.until(ExpectedConditions.stalenessOf(firstFilm));
-    wait.until(ExpectedConditions.presenceOfElementLocated(By.className("movie_box")));
+    wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
   
     Assert.assertTrue(driver.findElement(By.className("movie_box"))
     		.findElement(By.className("title")).getText().equals(filmTitle));
