@@ -1,11 +1,11 @@
-package mygroup;
+/*package mygroup;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
 import org.testng.*;
 import org.testng.annotations.*;
 
-import newgroup.TestBase;
+import pages.TestBase;
 
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
@@ -52,4 +52,4 @@ public class LoginTest extends TestBase {
       acceptNextAlert = true;
     }
   }
-}
+}*/

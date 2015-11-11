@@ -1,4 +1,4 @@
-package newgroup;
+/*package mygroup;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -7,6 +7,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import newgroup.pages.HomePage;
+import pages.TestBase;
 
 public class HomePageTest extends TestBase {
 
@@ -30,4 +31,4 @@ public class HomePageTest extends TestBase {
 	public void test2() throws InterruptedException {
 		Assert.assertTrue(true);
 	}
-}
+}*/

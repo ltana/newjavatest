@@ -2,83 +2,103 @@
 <testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="19942" started-at="2015-11-05T21:56:24Z" finished-at="2015-11-05T21:56:44Z">
+  <suite name="Tests" duration-ms="30411" started-at="2015-11-11T10:56:04Z" finished-at="2015-11-11T10:56:34Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="19942" started-at="2015-11-05T21:56:24Z" finished-at="2015-11-05T21:56:44Z">
+    <test name="Test1" duration-ms="30411" started-at="2015-11-11T10:56:04Z" finished-at="2015-11-11T10:56:34Z">
       <class name="newgroup.SearchSomeResults">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.SearchSomeResults@cd8737]" name="init" is-config="true" duration-ms="149" started-at="2015-11-05T23:56:41Z" finished-at="2015-11-05T23:56:41Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.SearchSomeResults@1adae5d]" name="init" is-config="true" duration-ms="289" started-at="2015-11-11T12:56:31Z" finished-at="2015-11-11T12:56:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testSearchSomeResults()[pri:0, instance:newgroup.SearchSomeResults@cd8737]" name="testSearchSomeResults" duration-ms="1953" started-at="2015-11-05T23:56:41Z" finished-at="2015-11-05T23:56:43Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:newgroup.SearchSomeResults@1adae5d]" name="mayBeLogout" is-config="true" duration-ms="14" started-at="2015-11-11T12:56:32Z" finished-at="2015-11-11T12:56:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="testSearchSomeResults()[pri:0, instance:newgroup.SearchSomeResults@1adae5d]" name="testSearchSomeResults" duration-ms="1860" started-at="2015-11-11T12:56:32Z" finished-at="2015-11-11T12:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchSomeResults -->
-        <test-method status="PASS" signature="afterSearchNoResults()[pri:0, instance:newgroup.SearchSomeResults@cd8737]" name="afterSearchNoResults" is-config="true" duration-ms="581" started-at="2015-11-05T23:56:43Z" finished-at="2015-11-05T23:56:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSearchNoResults -->
-      </class> <!-- newgroup.SearchSomeResults -->
-      <class name="newgroup.AddFilmPositive">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.AddFilmPositive@17f6480]" name="init" is-config="true" duration-ms="5781" started-at="2015-11-05T23:56:24Z" finished-at="2015-11-05T23:56:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="testAddFilmPositive()[pri:0, instance:newgroup.AddFilmPositive@17f6480]" name="testAddFilmPositive" duration-ms="4508" started-at="2015-11-05T23:56:30Z" finished-at="2015-11-05T23:56:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddFilmPositive -->
-        <test-method status="PASS" signature="afterAddFilmPositive()[pri:0, instance:newgroup.AddFilmPositive@17f6480]" name="afterAddFilmPositive" is-config="true" duration-ms="601" started-at="2015-11-05T23:56:34Z" finished-at="2015-11-05T23:56:35Z">
+        <test-method status="PASS" signature="afterAddFilmPositive()[pri:0, instance:newgroup.SearchSomeResults@1adae5d]" name="afterAddFilmPositive" is-config="true" duration-ms="580" started-at="2015-11-11T12:56:34Z" finished-at="2015-11-11T12:56:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterAddFilmPositive -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:newgroup.AddFilmPositive@17f6480]" name="tearDown" is-config="true" duration-ms="1759" started-at="2015-11-05T23:56:44Z" finished-at="2015-11-05T23:56:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- newgroup.AddFilmPositive -->
+      </class> <!-- newgroup.SearchSomeResults -->
       <class name="newgroup.AddFilmNegative">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.AddFilmNegative@1f256fa]" name="init" is-config="true" duration-ms="156" started-at="2015-11-05T23:56:35Z" finished-at="2015-11-05T23:56:35Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.AddFilmNegative@1be98f5]" name="init" is-config="true" duration-ms="242" started-at="2015-11-11T12:56:18Z" finished-at="2015-11-11T12:56:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testAddFilmNegative()[pri:0, instance:newgroup.AddFilmNegative@1f256fa]" name="testAddFilmNegative" duration-ms="971" started-at="2015-11-05T23:56:35Z" finished-at="2015-11-05T23:56:36Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:newgroup.AddFilmNegative@1be98f5]" name="mayBeLogout" is-config="true" duration-ms="12" started-at="2015-11-11T12:56:18Z" finished-at="2015-11-11T12:56:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="testAddFilmNegative()[pri:0, instance:newgroup.AddFilmNegative@1be98f5]" name="testAddFilmNegative" duration-ms="6540" started-at="2015-11-11T12:56:18Z" finished-at="2015-11-11T12:56:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddFilmNegative -->
-        <test-method status="PASS" signature="afterAddFilmNegative()[pri:0, instance:newgroup.AddFilmNegative@1f256fa]" name="afterAddFilmNegative" is-config="true" duration-ms="595" started-at="2015-11-05T23:56:36Z" finished-at="2015-11-05T23:56:37Z">
+        <test-method status="PASS" signature="afterAddFilmPositive()[pri:0, instance:newgroup.AddFilmNegative@1be98f5]" name="afterAddFilmPositive" is-config="true" duration-ms="610" started-at="2015-11-11T12:56:24Z" finished-at="2015-11-11T12:56:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterAddFilmNegative -->
+        </test-method> <!-- afterAddFilmPositive -->
       </class> <!-- newgroup.AddFilmNegative -->
-      <class name="newgroup.DeleteFilm">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.DeleteFilm@154909b]" name="init" is-config="true" duration-ms="171" started-at="2015-11-05T23:56:37Z" finished-at="2015-11-05T23:56:37Z">
+      <class name="newgroup.AddFilmPositive">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.AddFilmPositive@1684286]" name="init" is-config="true" duration-ms="8928" started-at="2015-11-11T12:56:04Z" finished-at="2015-11-11T12:56:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testDeleteFilm()[pri:0, instance:newgroup.DeleteFilm@154909b]" name="testDeleteFilm" duration-ms="1739" started-at="2015-11-05T23:56:37Z" finished-at="2015-11-05T23:56:38Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:newgroup.AddFilmPositive@1684286]" name="mayBeLogout" is-config="true" duration-ms="26" started-at="2015-11-11T12:56:13Z" finished-at="2015-11-11T12:56:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="testAddFilmNegative()[pri:0, instance:newgroup.AddFilmPositive@1684286]" name="testAddFilmNegative" duration-ms="4247" started-at="2015-11-11T12:56:13Z" finished-at="2015-11-11T12:56:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFilmNegative -->
+        <test-method status="PASS" signature="afterAddFilmPositive()[pri:0, instance:newgroup.AddFilmPositive@1684286]" name="afterAddFilmPositive" is-config="true" duration-ms="615" started-at="2015-11-11T12:56:17Z" finished-at="2015-11-11T12:56:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAddFilmPositive -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:newgroup.AddFilmPositive@1684286]" name="stop" is-config="true" duration-ms="1742" started-at="2015-11-11T12:56:34Z" finished-at="2015-11-11T12:56:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stop -->
+      </class> <!-- newgroup.AddFilmPositive -->
+      <class name="newgroup.DeleteFilm">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.DeleteFilm@ac6e3]" name="init" is-config="true" duration-ms="281" started-at="2015-11-11T12:56:25Z" finished-at="2015-11-11T12:56:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:newgroup.DeleteFilm@ac6e3]" name="mayBeLogout" is-config="true" duration-ms="21" started-at="2015-11-11T12:56:25Z" finished-at="2015-11-11T12:56:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="testDeleteFilm()[pri:0, instance:newgroup.DeleteFilm@ac6e3]" name="testDeleteFilm" duration-ms="2939" started-at="2015-11-11T12:56:25Z" finished-at="2015-11-11T12:56:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteFilm -->
-        <test-method status="PASS" signature="afterDeleteFilm()[pri:0, instance:newgroup.DeleteFilm@154909b]" name="afterDeleteFilm" is-config="true" duration-ms="689" started-at="2015-11-05T23:56:38Z" finished-at="2015-11-05T23:56:39Z">
+        <test-method status="PASS" signature="afterAddFilmPositive()[pri:0, instance:newgroup.DeleteFilm@ac6e3]" name="afterAddFilmPositive" is-config="true" duration-ms="586" started-at="2015-11-11T12:56:28Z" finished-at="2015-11-11T12:56:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterDeleteFilm -->
+        </test-method> <!-- afterAddFilmPositive -->
       </class> <!-- newgroup.DeleteFilm -->
       <class name="newgroup.SearchNoResults">
-        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.SearchNoResults@f71333]" name="init" is-config="true" duration-ms="138" started-at="2015-11-05T23:56:39Z" finished-at="2015-11-05T23:56:39Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:newgroup.SearchNoResults@17f6480]" name="init" is-config="true" duration-ms="241" started-at="2015-11-11T12:56:29Z" finished-at="2015-11-11T12:56:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testSearchNoResults()[pri:0, instance:newgroup.SearchNoResults@f71333]" name="testSearchNoResults" duration-ms="1307" started-at="2015-11-05T23:56:39Z" finished-at="2015-11-05T23:56:41Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:newgroup.SearchNoResults@17f6480]" name="mayBeLogout" is-config="true" duration-ms="15" started-at="2015-11-11T12:56:29Z" finished-at="2015-11-11T12:56:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="PASS" signature="testSearchNoResults()[pri:0, instance:newgroup.SearchNoResults@17f6480]" name="testSearchNoResults" duration-ms="1763" started-at="2015-11-11T12:56:29Z" finished-at="2015-11-11T12:56:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchNoResults -->
-        <test-method status="PASS" signature="afterSearchNoResults()[pri:0, instance:newgroup.SearchNoResults@f71333]" name="afterSearchNoResults" is-config="true" duration-ms="589" started-at="2015-11-05T23:56:41Z" finished-at="2015-11-05T23:56:41Z">
+        <test-method status="PASS" signature="afterAddFilmPositive()[pri:0, instance:newgroup.SearchNoResults@17f6480]" name="afterAddFilmPositive" is-config="true" duration-ms="591" started-at="2015-11-11T12:56:31Z" finished-at="2015-11-11T12:56:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSearchNoResults -->
+        </test-method> <!-- afterAddFilmPositive -->
       </class> <!-- newgroup.SearchNoResults -->
     </test> <!-- Test1 -->
   </suite> <!-- Tests -->

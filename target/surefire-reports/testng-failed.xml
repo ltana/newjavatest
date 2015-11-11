@@ -7,34 +7,29 @@
     <classes>
       <class name="newgroup.AddFilmPositive">
         <methods>
-          <include name="tearDown"/>
-          <include name="afterAddFilmPositive"/>
+          <include name="testAddFilmNegative"/>
+          <include name="mayBeLogout"/>
           <include name="init"/>
         </methods>
       </class> <!-- newgroup.AddFilmPositive -->
       <class name="newgroup.DeleteFilm">
         <methods>
-          <include name="afterDeleteFilm"/>
-          <include name="init"/>
+          <include name="testDeleteFilm"/>
         </methods>
       </class> <!-- newgroup.DeleteFilm -->
+      <class name="newgroup.AddFilmNegative">
+        <methods>
+          <include name="testAddFilmNegative"/>
+        </methods>
+      </class> <!-- newgroup.AddFilmNegative -->
       <class name="newgroup.SearchSomeResults">
         <methods>
-          <include name="afterSearchNoResults"/>
-          <include name="init"/>
           <include name="testSearchSomeResults"/>
         </methods>
       </class> <!-- newgroup.SearchSomeResults -->
-      <class name="newgroup.AddFilmNegative">
-        <methods>
-          <include name="afterAddFilmNegative"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- newgroup.AddFilmNegative -->
       <class name="newgroup.SearchNoResults">
         <methods>
-          <include name="afterSearchNoResults"/>
-          <include name="init"/>
+          <include name="testSearchNoResults"/>
         </methods>
       </class> <!-- newgroup.SearchNoResults -->
     </classes>

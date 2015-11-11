@@ -5,10 +5,10 @@
 		<parameter name="path" value="/"/>
 		<classes>
 		 <class name="newgroup.AddFilmPositive"/>
-		 <class name="newgroup.AddFilmNegative"/> 
-		 <class name="newgroup.DeleteFilm"/>
-		 <class name="newgroup.SearchNoResults"/> 
-		 <class name="newgroup.SearchSomeResults"/> 
+		<class name="newgroup.AddFilmNegative"/>
+		  <class name="newgroup.DeleteFilm"/> 
+		  <class name="newgroup.SearchNoResults"/>
+		  <class name="newgroup.SearchSomeResults"/> 
 		</classes>
 	</test>  
 </suite>

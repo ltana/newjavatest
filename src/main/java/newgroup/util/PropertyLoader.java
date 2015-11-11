@@ -3,8 +3,10 @@ package newgroup.util;
 import java.io.IOException;
 import java.util.Properties;
 
-/**
+/*
  * Class that extracts properties from the prop file.
+ * 
+ * @author Sebastiano Armeli-Battana
  */
 public class PropertyLoader {
 
@@ -18,7 +20,7 @@ public class PropertyLoader {
 			e.printStackTrace();
 		}
 
-		String value = null;
+		String value = "";
 
 		if (name != null) {
 			value = props.getProperty(name);

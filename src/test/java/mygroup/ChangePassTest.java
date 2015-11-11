@@ -1,4 +1,4 @@
-package mygroup;
+/*package mygroup;
 
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.*;
 import org.testng.annotations.*;
 
-import newgroup.TestBase;
+import pages.TestBase;
 
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
@@ -100,5 +100,5 @@ private boolean isElementPresent(By by) {
       acceptNextAlert = true;
     }
   }
-}
+}*/
 

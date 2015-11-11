@@ -5,8 +5,9 @@
     <classes>
       <class name="newgroup.SearchSomeResults">
         <methods>
-          <include name="afterSearchNoResults"/>
-          <include name="tearDown"/>
+          <include name="stop"/>
+          <include name="mayBeLogout"/>
+          <include name="afterAddFilmPositive"/>
           <include name="init"/>
           <include name="testSearchSomeResults"/>
         </methods>

@@ -1,4 +1,4 @@
-package mygroup;
+/*package mygroup;
 
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.*;
 import org.testng.annotations.*;
 
-import newgroup.TestBase;
+import pages.TestBase;
 
 import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
@@ -79,7 +79,7 @@ public void testMyTest() throws Exception {
 		newpassagain.clear();
 	    newpassagain.sendKeys("admin");
 	    driver.findElement(By.name("submit")).click();
-  }*/
+  }
   
   
 private boolean isElementPresent(By by) {
@@ -105,5 +105,5 @@ private boolean isElementPresent(By by) {
       acceptNextAlert = true;
     }
   }
-}
+}*/
 
