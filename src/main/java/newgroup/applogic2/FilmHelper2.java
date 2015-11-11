@@ -40,18 +40,13 @@ public class FilmHelper2 extends DriverBasedHelper implements FilmHelper {
   }
   
   @Override
-  public void clearSearchResultsAfterSearch() {
-	  pages.internalPage.clearSearchResults();
+  public void clearSearchResultsAfterSearch(WebElement element) {
+	  pages.internalPage.clearSearchResults(element);
   }
   
   @Override
-  public void searchFilmsWithNewResults(String text/*, WebElement element*/) {
-	  pages.internalPage.searchFilmsWithResults(text/*, element*/);
-  }
-  
-  @Override
-  public void waitStaless(WebElement element) {
-	  pages.internalPage.waitForStale(element);
+  public void searchFilmsWithNewResults(String text, WebElement element) {
+	  pages.internalPage.searchFilmsWithResults(text, element);
   }
   
   @Override
@@ -59,6 +54,10 @@ public class FilmHelper2 extends DriverBasedHelper implements FilmHelper {
     return pages.internalPage.oldElement();
   }
   
+  @Override
+  public WebElement oldResultElement() {
+    return pages.internalPage.oldResult();
+  }
   
   @Override
   public int countFilms() {

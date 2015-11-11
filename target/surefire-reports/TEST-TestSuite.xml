@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="17.347" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="16.826" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_60\jre\bin"/>
@@ -62,9 +62,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testAddFilmNegative" classname="newgroup.AddFilmPositive" time="4.246"/>
-  <testcase name="testAddFilmNegative" classname="newgroup.AddFilmNegative" time="6.539"/>
-  <testcase name="testDeleteFilm" classname="newgroup.DeleteFilm" time="2.939"/>
-  <testcase name="testSearchNoResults" classname="newgroup.SearchNoResults" time="1.763"/>
-  <testcase name="testSearchSomeResults" classname="newgroup.SearchSomeResults" time="1.86"/>
+  <testcase name="testAddFilmNegative" classname="newgroup.AddFilmPositive" time="3.668"/>
+  <testcase name="testAddFilmNegative" classname="newgroup.AddFilmNegative" time="6.573"/>
+  <testcase name="testDeleteFilm" classname="newgroup.DeleteFilm" time="2.884"/>
+  <testcase name="testSearchNoResults" classname="newgroup.SearchNoResults" time="1.718"/>
+  <testcase name="testSearchSomeResults" classname="newgroup.SearchSomeResults" time="1.983"/>
 </testsuite>

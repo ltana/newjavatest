@@ -5,6 +5,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -52,9 +53,20 @@ public class InternalPage extends AnyPage {
   @FindBy(css = "#q")
   private WebElement searchField;
   
+  @CacheLookup
+  @FindBy(css = ".movie_box")
+  private WebElement stalefilmItem;
   
   public WebElement oldElement() {
-		 return filmItem;
+		 return stalefilmItem;
+	  }
+  
+  @CacheLookup
+  @FindBy(xpath = ".//*[@id='results']/div[1]")
+  private WebElement staleResultItem;
+
+  public WebElement oldResult() {
+		 return staleResultItem;
 	  }
   
   public UserProfilePage clickUserProfilePage() {
@@ -101,23 +113,18 @@ public class InternalPage extends AnyPage {
 	    wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.className("movie_box"))));
 	  }
   
-  public void clearSearchResults() {
+  public void clearSearchResults(WebElement element) {
 	  searchField.clear();
 	    searchField.sendKeys(Keys.RETURN);
-	    wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.xpath(".//*[@id='results']/div[1]"))));
+	    wait.until(ExpectedConditions.stalenessOf(element));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
 	  }
   
-  public void searchFilmsWithResults(String text/*, WebElement element*/) {
+  public void searchFilmsWithResults(String text, WebElement element) {
 	  searchField.clear();
 	    searchField.sendKeys(text + Keys.RETURN);
-	    //wait.until(ExpectedConditions.stalenessOf(element));
-	    wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.className("movie_box"))));
+	    wait.until(ExpectedConditions.stalenessOf(element));
 	   wait.until(ExpectedConditions.presenceOfElementLocated(By.className("movie_box")));
 	  }
-  
-  public void waitForStale(WebElement element) {
- wait.until(ExpectedConditions.stalenessOf(element));
 
-	  }
 }
