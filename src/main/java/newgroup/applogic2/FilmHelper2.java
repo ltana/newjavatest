@@ -40,13 +40,13 @@ public class FilmHelper2 extends DriverBasedHelper implements FilmHelper {
   }
   
   @Override
-  public void clearSearchResultsAfterSearch(WebElement element) {
-	  pages.internalPage.clearSearchResults(element);
+  public void clearSearchResultsAfterSearch() {
+	  pages.internalPage.ensurePageLoaded().clearSearchResults();
   }
   
   @Override
-  public void searchFilmsWithNewResults(String text, WebElement element) {
-	  pages.internalPage.searchFilmsWithResults(text, element);
+  public void searchFilmsWithNewResults(String text) {
+	  pages.internalPage.ensurePageLoaded().searchFilmsWithResults(text);
   }
   
   @Override

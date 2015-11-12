@@ -27,18 +27,13 @@ public class SearchSomeResults extends TestBase {
 	  User user = new User().setLogin("admin").setPassword("admin");
 	  
 	  app.getUserHelper().loginAs(user);
-
-	  
-	  WebElement oldResult = app.getFilmHelper().oldResultElement();
     
-	  app.getFilmHelper().clearSearchResultsAfterSearch(oldResult);
-	
-	  WebElement oldFilm = app.getFilmHelper().oldFilmElement();
+	  app.getFilmHelper().clearSearchResultsAfterSearch();
 	  
 	String filmTitle = app.getFilmHelper().getFilmTitle();
     System.out.println("first film title is " + filmTitle);
 
-    app.getFilmHelper().searchFilmsWithNewResults(filmTitle, oldFilm); 
+    app.getFilmHelper().searchFilmsWithNewResults(filmTitle); 
     Assert.assertTrue(app.getFilmHelper().getFilmTitle().equals(filmTitle));
  }
 

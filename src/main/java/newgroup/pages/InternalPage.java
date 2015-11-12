@@ -23,11 +23,7 @@ public class InternalPage extends AnyPage {
     wait.until(presenceOfElementLocated(By.cssSelector("nav")));
     return this;
   }
-  
-  public InternalPage ensureSearchResultsLoaded() {
-	  wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
-	    return this;
-	  }
+
   
   @FindBy(css = "nav a[href $= '?go=profile']")
   private WebElement userProfileLink;
@@ -112,15 +108,20 @@ public class InternalPage extends AnyPage {
 	    searchField.sendKeys(text + Keys.RETURN);
 	    wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.className("movie_box"))));
 	  }
+ 
   
-  public void clearSearchResults(WebElement element) {
+  
+  
+  public void clearSearchResults() {
+	  WebElement element = oldResult();
 	  searchField.clear();
 	    searchField.sendKeys(Keys.RETURN);
 	    wait.until(ExpectedConditions.stalenessOf(element));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.className("title")));
 	  }
   
-  public void searchFilmsWithResults(String text, WebElement element) {
+  public void searchFilmsWithResults(String text) {
+	  WebElement element = oldElement();
 	  searchField.clear();
 	    searchField.sendKeys(text + Keys.RETURN);
 	    wait.until(ExpectedConditions.stalenessOf(element));

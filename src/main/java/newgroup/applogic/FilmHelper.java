@@ -16,8 +16,8 @@ public interface FilmHelper {
 	List<Film> search1(String title);
 	void searchFilm(String text);
 	boolean showNoResultsSearchMessage();
-	void searchFilmsWithNewResults(String text, WebElement element);
+	void searchFilmsWithNewResults(String text);
 	WebElement oldFilmElement();
 	WebElement oldResultElement();
-	void clearSearchResultsAfterSearch(WebElement element);
+	void clearSearchResultsAfterSearch();
 }
